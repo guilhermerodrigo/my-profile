@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders email for contact', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const emailElement = getByText(/rodrigo.rn@hotmail.com.br/i);
+  expect(emailElement).toBeInTheDocument();
 });
